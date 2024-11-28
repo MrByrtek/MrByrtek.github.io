@@ -3,4 +3,124 @@ html, body{
     width:100%;
     padding:0;
     margin:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#contener{
+    margin:auto;
+}
+#naglowek{
+    width:100%;;
+    background-image:linear-gradient(black, darkblue);
+    padding:10px 0px;
+    height:60px;
+}
+#menu{
+    text-align:center;
+    margin-top:20px;
+}
+#menu a{
+    margin-left:80px;
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+}
+#notka{
+    padding:10px 0px;
+}
+#about{
+    margin:auto;
+    width:300px;
+    text-align:center;
+    margin-top:100px;
+}
+#contener2{
+    background-image:linear-gradient(darkblue,black);
+    margin-top:0px;
+}
+h1{
+    color: rgb(55, 161, 255);
+    font-size:40px;
+}
+h4{
+    color:white;
+    font-size:20px;
+}
+#about p{
+    color:white;
+}
+.guzik1{
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(55, 161, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    border:1px solid white;
+    cursor: pointer;
+    text-align: center;
+}
+#about2{
+    text-align:center;
+    width:500px;
+    margin:auto;
+    margin-top:120px;
+}
+#about2 p{
+    color:white;
+}
+#okn{
+    padding:10px 0px;
+    background-image:linear-gradient(to top, black 0%, darkblue 50%, black 100%)
+}
+#okna{
+   background-image:linear-gradient(darkblue);
+   width:1000px;
+   margin:auto;
+   height:300px;
+   display:flex;
+   margin-top:80px;
+}
+.okon{
+    background-color:black;
+    width:250px;
+    height:200px;
+    color:white;
+    margin-left:30px;
+    margin:auto;
+    border-radius:20px;
+    text-align:center;
+    opacity:90%;
+}
+img{
+    width:50px;
+    height:50px;
+    margin-top:30px;
+}
+#okna2{
+    background-image:linear-gradient(darkblue);
+    width:1000px;
+    margin:auto;
+    height:300px;
+    display:flex;
+}
+h5{
+    font-size:19px;
+}
+#menu a:hover{
+    color: rgb(55, 161, 255);
+}
+#about .guzik1:hover{
+    background-color:rgb(55, 161, 255);
+    color:black;
+}
+#yt{
+    margin-top:10px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    border:1px solid white;
+    cursor: pointer;
+    text-align: center;
+    background-color:rgb(55, 161, 255);
 }
