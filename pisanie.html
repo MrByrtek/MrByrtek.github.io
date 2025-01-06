@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pisanie</title>
+    <script src="java.js" defer></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+
+</head>
+<style>
+   body{
+    background-color:red;
+   }
+</style>
+<body>
+    <div id="contener">
+    <h1>Witaj na stronie!</h1>
+    <div id="user-form">
+        <label for="username">Podaj swoje imię: </label>
+        <input type="text" id="username" placeholder="Twoje imię">
+        <button id="submit-name">Zatwierdź</button>
+    </div>
+    <div id="message-form" style="display: none;">
+        <p id="welcome-message"></p>
+        <label for="user-input">Wpisz coś: </label>
+        <input type="text" id="user-input" placeholder="Twoja wiadomość">
+        <button id="submit-message">Wyślij</button>
+    </div>
+    <div id="output" style="margin-top: 20px;"></div>
+</div>
+</body>
+</html>
