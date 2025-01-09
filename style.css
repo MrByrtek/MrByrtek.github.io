@@ -14,7 +14,6 @@ html, body{
     padding:10px 0px;
     height:60px;
     position: relative;
-    bottom: 50px;
     animation-name: jajko;
     animation-duration: 1s;
 }
