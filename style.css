@@ -17,6 +17,9 @@ html, body{
     position: relative;
     animation-name: jajko;
     animation-duration: 1s;
+    position:sticky;
+    top:0;
+    transition: background 0.3s ease;
 }
 
 @keyframes jajko{
@@ -33,6 +36,7 @@ html, body{
     text-decoration:none;
     color:white;
     font-size:17px;
+    transition: background 0.3s, color 0.3s;
 }
 #notka{
     padding:10px 0px;
@@ -50,6 +54,7 @@ html, body{
 h1{
     color: rgb(55, 161, 255);
     font-size:40px;
+    transition: background 0.3s, color 0.3s;
 }
 h4{
     color:white;
@@ -67,6 +72,7 @@ h4{
     border:1px solid white;
     cursor: pointer;
     text-align: center;
+    transition: background 0.3s, color 0.3s;
 }
 #about2{
     text-align:center;
@@ -91,7 +97,8 @@ h4{
    margin-left:425px;
 }
 .okon{
-    background-color:black;
+    background-color:transparent;
+    box-shadow:1px 1px 1px 1px black;
     width:250px;
     height:200px;
     color:white;
@@ -100,6 +107,10 @@ h4{
     border-radius:20px;
     text-align:center;
     opacity:90%;
+    transition:transform 0.3s ease;
+}
+.okon:hover{
+    transform: scale(1.2);
 }
 #okna a{
     margin-left:75px;
@@ -141,6 +152,83 @@ h5{
     border-radius: 5px;
     border:1px solid white;
     cursor: pointer;
+    font-weight:bold;
     text-align: center;
     background-color:rgb(55, 161, 255);
+    transition: background 0.3s, color 0.3s;
+}
+h4 a{
+    text-decoration: none;
+    color: rgb(55, 161, 255);
+    font-size:20px;
+    transition: background 0.3s, color 0.3s;
+}
+#yt:hover{
+    background-color:darkblue;
+    color:white;
+}
+h1:hover{
+    color:darkblue;
+}
+h4 a:hover{
+    color:darkblue;
+}
+h5 a{
+    text-decoration: none;
+    color: rgb(55, 161, 255);
+    font-size:17px;
+}
+#link{
+    text-decoration:none;
+    cursor:pointer;
+    transition: background 0.3s, color 0.3s;
+}
+#link:hover{
+    color:darkblue;
+}
+#video {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:none;
+    animation: video 5s infinite linear;
+}
+#link:focus + #video,
+#link:active + #video {
+    display:block;
+}
+@keyframes video{
+    0% {
+        top: 50%;
+        left: 50%;
+    }
+    25% {
+        top: 10%;
+        left: 90%;
+    }
+    50% {
+        top: 90%;
+        left: 90%;
+    }
+    75% {
+        top: 90%;
+        left: 10%;
+    }
+    100% {
+        top: 50%;
+        left: 50%;
+    }
+}
+#content{
+    border-radius:25px;
+}
+#wizyty{
+    color:white;
+    font-size:20px;
+    text-align:center;
+    box-shadow:1px 1px 1px 1px black;
+    margin-left:25px;
+    border-radius:25px;
+    background-color:transparent;
 }
