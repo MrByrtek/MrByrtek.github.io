@@ -1,25 +1,71 @@
-html,body{
-    margin:0;
+html,
+body {
+    margin: 0;
     padding: 0;
 }
 
-main{
-    width: 50vw;
+@-webkit-keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+.animation {
+    animation-name: shake;
+    animation-duration: 150ms;
+}
+
+body{
+    background-color: rgb(246, 246, 246);
+    font-weight: bold;
+}
+
+main {
     margin: auto;
     padding: 50px;
     text-align: center;
 }
 
-#pointsall{
+#pointsall {
     font-size: 32px;
 }
 
-#passiveAll{
+#passiveAll {
     font-size: 20px;
 }
 
-button{
+button {
     padding: 10px;
     width: 150px;
     font-weight: bolder;
+}
+
+#upgrade1 {
+    height: 75px;
+}
+
+.upgrades {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#sklep {
+    height: 0px;
+    transition-duration: 500ms;
+    overflow: hidden;
+    display: none;
+    background-color: bisque;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    
 }
