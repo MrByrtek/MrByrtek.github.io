@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CickStyle.css">
+    <link rel="stylesheet" href="ClickStyle.css">
     <script src="ClickerScript.js" defer></script>
 </head>
 
 <body>
     <main>
-        <div id="pointsall">Punkty: <span id="points"></span> <span id="passiveAll">
-        <br>
-        (Auto: <span id="passive"></span>/sec)</span></div>
+        <div id="pointsall">Punkty: <span id="points"></span>
+            <span id="passiveAll">
+                <br>
+                (Auto: <span id="passive"></span>/sec)</span>
+        </div>
         <br>
         <button id="click">Kilkaj</button>
+        <br><br>
+        <button id="openShop">
+            Otwórz sklep
+        </button>
+        <br><br>
+        <div id="sklep">
+            <button id="upgrade1" class="upgrades">+0.1/sec<br>(<span id="upgrade1Cost">5</span> punktów)</button>
+        </div>
     </main>
 </body>
 
